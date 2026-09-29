@@ -51,10 +51,8 @@ If the MVP is completed successfully, the project may be extended with:
 
 ## Team
 
-- Team Leader: [Name]
-- Team Members: [Name]
-- [Name]
-
+- Team Leader: Hossam Ragab
+- Team Members: Md Mohiuddin Mollah
 ## Status
 
 🚧 Project setup
