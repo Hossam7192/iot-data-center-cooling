@@ -4,8 +4,7 @@
 #include <DHT.h>
 
 // 1. Wi-Fi settings
-const char* ssid = "YOUR_WIFI_NAME";
-const char* password = "YOUR_WIFI_PASSWORD";
+#include "wifi_config.h"
 
 // 2. MQTT settings
 const char* mqtt_server = "broker.emqx.io";
@@ -22,6 +21,7 @@ const char* humidity_topic =
 #define DHTTYPE DHT22
 
 DHT dht(DHTPIN, DHTTYPE);
+bool fanState = false;
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -93,7 +93,20 @@ void loop() {
     if (isnan(temperature) || isnan(humidity)) {
       Serial.println("Failed to read DHT22!");
       return;
+      
     }
+
+  if (temperature >= 26) {
+  fanState = true;
+  } else if (temperature <= 24) {
+    fanState = false;
+  }
+
+  if (fanState == true) {
+  Serial.println("FAN ON");
+  } else {
+  Serial.println("FAN OFF");
+  }
 
     // Convert readings to text for MQTT
     char tempString[16];
