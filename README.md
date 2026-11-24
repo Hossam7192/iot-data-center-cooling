@@ -80,3 +80,6 @@ The automatic cooling system remains functional and operates
 independently of the AI model.
 
 The AI component is an experimental proof of concept.
+## Hardware Prototype
+
+![Hardware Prototype](images/hardware.jpg)
