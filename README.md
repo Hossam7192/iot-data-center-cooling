@@ -57,3 +57,26 @@ If the MVP is completed successfully, the project may be extended with:
 ## Status
 
 🚧 Project setup
+## Final AI Experiment Results
+
+The Random Forest Regression model predicts temperature
+approximately five minutes ahead using historical sensor data.
+
+### Latest Results - November 24, 2026
+
+| Metric | Result |
+|---|---|
+| Recording sessions | 6 |
+| Usable readings | 1764 |
+| Training samples | 1351 |
+| Testing samples | 353 |
+| AI MAE | 0.582°C |
+| Baseline MAE | 0.245°C |
+
+The baseline outperformed the AI model.
+Further data collection and model improvements are needed.
+
+The automatic cooling system remains functional and operates
+independently of the AI model.
+
+The AI component is an experimental proof of concept.
