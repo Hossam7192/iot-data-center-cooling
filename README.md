@@ -83,3 +83,6 @@ The AI component is an experimental proof of concept.
 ## Hardware Prototype
 
 ![Hardware Prototype](images/hardware.jpg)
+### Historical Temperature Analysis
+
+![Temperature Graph](images/temperature-graph.png)
